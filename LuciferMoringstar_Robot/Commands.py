@@ -45,14 +45,14 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**𝙿𝚕𝚎𝚊𝚜𝚎 𝙲𝚕𝚎𝚌𝚔 𝚃𝚑𝚒𝚜 𝙱𝚞𝚝𝚝𝚘𝚗 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝙰𝚗𝚍 𝙲𝚕𝚎𝚌𝚔 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙱𝚞𝚝𝚝𝚘𝚗 𝙰𝚗𝚍 𝚃𝚊𝚔𝚎 𝚈𝚘𝚞𝚛 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎 𝚄𝚜𝚎 𝚃𝚑𝚒𝚜 𝙱𝚘𝚝...!**",
+                    text="**Please Join My Updates Channel to use this Bot!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🤖", url=invite_link.invite_link)
+                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -84,15 +84,15 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest'),
-                        InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url=f'https://t.me/GD_FILMCLUB')
+                        InlineKeyboardButton('🗣️ Group', url=f'https://t.me/KicchaRequest'),
+                        InlineKeyboardButton('💬Channel', url=f'https://t.me/GD_FILMCLUB')
                     ],
                     [
-                        InlineKeyboardButton('🔍 𝚂𝚎𝚊𝚛𝚌𝚑 𝙰𝚐𝚊𝚒𝚗 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
                     ],
                     [
-                        InlineKeyboardButton('📺 𝚃𝚟 𝚂𝚎𝚛𝚒𝚎𝚜 📺', url=f'https://t.me/TV_VIRISION'),
-                        InlineKeyboardButton('💻📱 𝙾𝚃𝚃 𝙼𝚘𝚟𝚒𝚎𝚜📱💻', url=f'https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES')
+                        InlineKeyboardButton('📺 Tv Series 📺', url=f'https://t.me/TV_VIRISION'),
+                        InlineKeyboardButton('💻📱OTT Movies 📱💻', url=f'https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -107,11 +107,11 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**𝙿𝚕𝚎𝚊𝚜𝚎 𝙲𝚕𝚎𝚌𝚔 𝚃𝚑𝚒𝚜 𝙱𝚞𝚝𝚝𝚘𝚗 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝙰𝚗𝚍 𝙲𝚕𝚎𝚌𝚔 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙱𝚞𝚝𝚝𝚘𝚗 𝙰𝚗𝚍 𝚃𝚊𝚔𝚎 𝚈𝚘𝚞𝚛 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎 𝚄𝚜𝚎 𝚃𝚑𝚒𝚜 𝙱𝚘𝚝...!**",
+            text="**Please Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🤖", url=invite_link.invite_link)
+                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -123,18 +123,16 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("🗣️ 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/KicchaRequest"),
-                InlineKeyboardButton("💻 𝙲𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
+                InlineKeyboardButton("🗣️ Group", url="https://t.me/KicchaRequest"),
+                InlineKeyboardButton("💻 Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                 ],[
-                InlineKeyboardButton("🧑‍💻 𝙼𝚢 𝙱𝚘𝚜𝚜", url="https://t.me/sachin_official_admin")
+                InlineKeyboardButton("🔍 Search Here 🔎", switch_inline_query_current_chat='')
                 ],[
-                InlineKeyboardButton("📁 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://t.me/GD_FILMCLUB"),
-                InlineKeyboardButton("📺 𝚃𝚟 𝚂𝚎𝚛𝚒𝚎𝚜", url="https://t.me/TV_VIRISION")
+                InlineKeyboardButton("📁 Channel", url="https://t.me/GD_FILMCLUB"),
+                InlineKeyboardButton("🖥️ Tv Series", url="https://t.me/TV_VIRISION")
                 ],[
-                InlineKeyboardButton("🔍 𝚂𝚎𝚊𝚛𝚌𝚑 𝙰𝚐𝚊𝚒𝚗 🔎", switch_inline_query_current_chat='')
-                ],[
-                InlineKeyboardButton("🤔 𝙷𝚎𝚕𝚙", callback_data="help"),
-                InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 🤠", callback_data="about")
+                InlineKeyboardButton("🤔 Help", callback_data="help"),
+                InlineKeyboardButton("About 🤠", callback_data="about")
                 ]]
             )
         )
@@ -346,8 +344,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/KicchaRequest'),
-            InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url=f'https://t.me/GD_FILMCLUB')
+            InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest'),
+            InlineKeyboardButton('Update Channel', url=f'https://t.me/GD_FILMCLUB')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
