@@ -22,7 +22,7 @@ DATABASE_NAME = 'LuciferMoringstar_Robot'
 COLLECTION_NAME = 'channel_files'  # If you are using the same database, then use different collection name for each bot
 
 # Messages
-START_MSG = """<b>👋𝙷𝚎𝚕𝚕𝚘 {},
+START_MSG = """<b>Hey {}!!</b>
 
 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 [ 𝐀𝐋𝐋𝐔 𝐀𝐑𝐉𝐔𝐍 𝐑𝐎𝐁𝐎𝐓](https://t.me/Allu_ArjunROBOT)  𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 𝙸𝙽 𝙼𝚈 𝙶𝚁𝙾𝚄𝙿 𝙾𝙽𝙻𝚈,
 𝙸𝚃'𝚂 𝚅𝙴𝚁𝚈 𝙴𝙰𝚂𝚈. 𝙹𝚄𝚂𝚃 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝙴𝙰𝚁𝙲𝙷 𝙼𝙾𝚅𝙸𝙴 𝙸𝙽 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙱𝙾𝚃 𝙸 𝚆𝙴𝙻𝙻 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 𝚃𝙷𝙴𝚁𝙴... 
